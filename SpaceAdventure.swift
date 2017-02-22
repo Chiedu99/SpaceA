@@ -8,9 +8,12 @@
 
 import Foundation
 class SpaceAdventure {
-    let planetarySystem = PlanetarySystem(name: "Solar System", planets: [Planet]())
-    init(planetrySystem:PlanetarySystem){
-            }
+    let planetarySystem: PlanetarySystem
+    
+    init (planetarySystem: PlanetarySystem) {
+        self.planetarySystem = planetarySystem
+    }
+    
 
     func start() {
         displayIntroduction()
